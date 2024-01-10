@@ -1,11 +1,10 @@
 from aiogram.types import (
   ReplyKeyboardMarkup,
-  KeyboardButton,
-  InlineKeyboardButton,
-  InlineKeyboardMarkup
+  KeyboardButton
 )
 
-main_kb = ReplyKeyboardMarkup(
+
+main = ReplyKeyboardMarkup(
   keyboard = [
     [
       KeyboardButton(text='Новый проект'),
@@ -16,12 +15,4 @@ main_kb = ReplyKeyboardMarkup(
   one_time_keyboard=True,
   input_field_placeholder='Выберите команду',
   selective=True
-)
-
-links_kb = InlineKeyboardMarkup(
-  inline_keyboard= [
-    [
-      InlineKeyboardButton(text='afsdf')
-    ]
-  ]
 )
